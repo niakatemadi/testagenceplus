@@ -16,7 +16,7 @@ const resizeImage = (req,res) => {
 
     sharp(info_image.name)
   .resize(200, 200)
-  .toFile(info_image.name +'resized', function(err) {
+  .toFile('resized.png', function(err) {
     
     console.log(err)
   });
